@@ -7,7 +7,7 @@ from plotly.subplots import make_subplots
 import streamlit as st
 from pathlib import Path
 
-from utils import date_select
+from utils import date_select, load_data
 
 @st.cache_data
 def load_data():
@@ -87,4 +87,5 @@ def run_eda():
         show_data(train, stores, oil, transactions, holidays_events)
     elif submenu == 'Charts':
         show_chart(train, stores, oil, transactions, holidays_events)
-
+    else:
+        pass
