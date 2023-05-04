@@ -15,7 +15,6 @@ def load_data():
 
     return train, stores, oil, transactions, holidays_events
 
-
 # Date Selection
 def date_select(data, col):
     data[col] = pd.to_datetime(data[col])
