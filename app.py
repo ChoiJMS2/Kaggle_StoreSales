@@ -6,6 +6,7 @@ from description import run_description
 from eda import run_eda
 from PIL import Image
 from data import run_data
+from family_eda import run_Show
 
 
 def main():
@@ -67,7 +68,7 @@ def main():
     elif selected == 'EDA':
         run_eda()
     elif selected == 'STAT':
-        pass
+        run_Show()
     else:
         st.write('error..')
 
