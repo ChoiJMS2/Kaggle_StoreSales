@@ -6,7 +6,7 @@ import streamlit as st
 
 @st.cache_data
 def load_data():
-    comp_dir = Path('data')
+    comp_dir = Path('data/store-sales-time-series-forecasting')
     train = pd.read_csv(comp_dir / 'train_sample_201516.csv')
     stores = pd.read_csv(comp_dir / 'stores.csv')
     oil = pd.read_csv(comp_dir / 'oil.csv')
@@ -14,6 +14,7 @@ def load_data():
     holidays_events = pd.read_csv(comp_dir / 'holidays_events.csv')
 
     return train, stores, oil, transactions, holidays_events
+
 
 # Date Selection
 def date_select(data, col):

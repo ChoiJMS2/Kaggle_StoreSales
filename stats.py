@@ -1,5 +1,4 @@
 # -*- coding:utf-8 -*-
-
 import pandas as pd
 import streamlit as st
 from utils import load_data, date_select
@@ -132,7 +131,7 @@ def twoMeans(train, transactions):
 
     st.plotly_chart(fig)
 
-    st.markdown("### Diary and Cleaning Comparison")
+    st.markdown("### Data Cleaning and Comparison")
     st.markdown("![](https://www.investopedia.com/thmb/R4twtcFq0xh1C2YLF-_QfeH30Is=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/ttest2-147f89de0b384314812570db74f16b17.png)")
     col1 = st.selectbox('Select Column 1', df_data['family'].unique(), key="family_col1")
     col2 = st.selectbox('Select Column 2', df_data['family'].unique(), key="family_col2")
