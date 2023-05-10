@@ -13,7 +13,7 @@ def main():
     with st.sidebar:
         selected = option_menu("Main Menu", ['Home', 'Description', 'Data', 'EDA', 'STAT', 'ML'],
                 icons=['house', 'card-checklist', 'card-checklist', 'bar-chart', 'clipboard-data', 'clipboard-data'],
-                menu_icon="cast", default_index=1, orientation = 'vertical', key='main_option')
+                menu_icon="cast", default_index=0, orientation = 'vertical', key='main_option')
 
     if selected == 'Home':
         run_home()
