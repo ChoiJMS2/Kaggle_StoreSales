@@ -49,7 +49,7 @@ def familyShow(train, transactions):
             yaxis_title='Family',
             plot_bgcolor='white',
             width=800,
-            height=400,
+            height=600,
             margin=dict(l=20, r=20, t=60, b=20)
         )
 
@@ -78,7 +78,7 @@ def familyShow(train, transactions):
             yaxis_title='Family',
             plot_bgcolor='white',
             width=800,
-            height=400,
+            height=600,
             margin=dict(l=20, r=20, t=60, b=20)
         )
 
@@ -107,7 +107,7 @@ def familyShow(train, transactions):
             yaxis_title='Family',
             plot_bgcolor='white',
             width=800,
-            height=400,
+            height=600,
             margin=dict(l=20, r=20, t=60, b=20)
         )
 
@@ -135,7 +135,7 @@ def familyShow(train, transactions):
             yaxis_title='Family',
             plot_bgcolor='white',
             width=800,
-            height=400,
+            height=600,
             margin=dict(l=20, r=20, t=60, b=20)
         )
 
@@ -164,7 +164,7 @@ def familyShow(train, transactions):
             yaxis_title='Family',
             plot_bgcolor='white',
             width=800,
-            height=400,
+            height=600,
             margin=dict(l=20, r=20, t=60, b=20)
         )
 

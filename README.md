@@ -5,7 +5,7 @@
 [발표 영상]() <br/><br/>
 [데모 시연]() <br/><br/>
 [포트 폴리오]() <br/><br/>
-![screensh](img/홈페이지.png)
+![screensh](https://github.com/ChoiJMS2/Kaggle_StoreSales/blob/main/img/main_page.PNG)
 
 ## 1.프로젝트의 시작 (2023.04.20 ~ 2023.05.17)
 - Kaggle Competition : Store Sales - Time Series Forecasting ( Use machine learning to predict grocery sales )
@@ -20,8 +20,12 @@
 - 대시보드 생성능력 향상.
 - 시계열 분석 및 회귀 분석 등 통계 지식 향상
 
+## 4. 데이터
+- \[Kaggle Competition : Store Sales - Time Series Forecasting] 에서 제공하는 데이터를 이용하였습니다.
+- [데이터 링크](https://www.kaggle.com/competitions/store-sales-time-series-forecasting/data)
+
 ## 4. ERD (개체 관계 모델)
-![screensh](img/erd.jpg)
+![screensh](https://github.com/ChoiJMS2/Kaggle_StoreSales/blob/main/img/erd.jpg)
 
 ## 5. 팀 구성
 - 사용언어 : Python : 3.9.13v
