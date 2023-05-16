@@ -24,10 +24,10 @@
 - \[Kaggle Competition : Store Sales - Time Series Forecasting] 에서 제공하는 데이터를 이용하였습니다.
 - [데이터 링크](https://www.kaggle.com/competitions/store-sales-time-series-forecasting/data)
 
-## 4. ERD (개체 관계 모델)
+## 5. ERD (개체 관계 모델)
 ![screensh](https://github.com/ChoiJMS2/Kaggle_StoreSales/blob/main/img/erd.jpg)
 
-## 5. 팀 구성
+## 6. 팀 구성
 - 사용언어 : Python : 3.9.13v
 - 작업툴 : Pycharm
 - 인원 : 4명
@@ -35,10 +35,28 @@
 - 기간 : 2023.04.20 ~ 2023.05.17
 ***
 
-## 6. 주요 기능
-- 
-    + ㅇㄹ
-## 7. 설치 방법
+## 7. 주요 기능
+- Home
+  + 멤버소개 및 프로젝트 개요
+- Description
+  + 프로젝트 목표 및 수행단계 소개
+- Data
+  + 데이터 설명 및 데이터 정의서 
+- EDA
+  + 유가 그래프, 판매량 그래프  
+  + 각 품목의 기간 및 매장 별 판매량
+  + 지진이 판매에 미치는 영향
+  + 유가가 판매에 미치는 영향
+- STAT
+  + 시계열 분석 (ADF, Moving Average, Seasonal Forecast)
+  + 두 평균의 비교
+    * 각 품목 간 평균 비교 
+- ML
+  + 랜덤 포레스트 회귀를 통한 머신러닝
+  + 데이터 예측
+***
+
+## 8. 설치 방법
 ### Windows
 + 버전 확인
     - vscode : 1.74.1
@@ -68,25 +86,7 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-# 내방 어디? v2(2023.02.02~)
+# Store Sales - Time Series Forecasting
 
 ## 주요 기능 업데이트 내용
-- 홈페이지
-    - 실거래 현황(최근 한달순)
-    - 전세 월평균, 월세 월평균 추이 꺾은선그래프 **시각화**
-    - 월세, 전세 실거래 수 지역 순위 막대그래프 **시각화**
-- 전월세 검색페이지
-    - 전/월세 구분 검색 중 모두 검색할 수 있도록 **추가**
-    - 보증금, 월세, 임대면적 최소/최대값 정해줄 수 있도록 **추가**
-    - 보증금, 월세, 임대면적 최소/최대값과 슬라이더값 **동기화**
-
-- 전세 예측페이지
-    - 날짜 선택 후 지역구별 평균 실거래가 지도 **시각화**
-
-- 건의사항페이지
-    - 처리 상태 **추가**
-    - 빈칸 입력시 에러메시지 **추가**
-    - 관리자 기능
-        - 처리 상태 변경 기능 **추가**
-    - 검색 기능
-        - 제목, 작성자명, 내용에 같은 내용 검색 기능 **추가**
+-
