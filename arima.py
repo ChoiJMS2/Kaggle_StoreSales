@@ -44,6 +44,7 @@ def run_group(transactions, train):
     st.markdown("# Grouped Line Graph")
 
     fig, axes = plt.subplots(nrows=3, ncols=1, figsize=(20, 20))
+    plt.subplots_adjust(left=0.125, bottom=0.1, right=0.9, top=0.9, wspace=0.2, hspace=0.25)
 
     # TRANSACTIONS (WEEKLY)
     axes[0].plot('date', 'mean', data=transactions, color='grey', marker='o')
@@ -115,6 +116,7 @@ def run_lag(transactions, train):
     st.markdown("# Lag_1 Graph")
 
     fig1, axes = plt.subplots(nrows=2, ncols=1, figsize=(20, 10))
+    plt.subplots_adjust(left=0.125, bottom=0.1, right=0.9, top=0.9, wspace=0.2, hspace=0.35)
     axes[0].plot('Lag_1', 'mean', data=grouped_train_w_lag1, color='0.75', linestyle=(0, (1, 10)))
     axes[0].set_title("Sales (grouped by week)", fontsize=20)
     axes[0] = sns.regplot(x='Lag_1',
@@ -158,6 +160,7 @@ def run_moving_average(transactions, train):
     moving_average_train_m = train_m['mean'].rolling(window=7, center=True, min_periods=4).mean()
 
     fig2, axes = plt.subplots(nrows=3, ncols=1, figsize=(20, 20))
+    plt.subplots_adjust(left=0.125, bottom=0.1, right=0.9, top=0.9, wspace=0.2, hspace=0.15)
 
     axes[0] = transactions['mean'].plot(color='0.75', linestyle='dashdot', ax=axes[0])
     axes[0] = moving_average_tran.plot(linewidth=3, color='g', ax=axes[0])
@@ -192,6 +195,7 @@ def run_trend(transactions, train):
     train_w.insert(1, 'time', column_time_w)
 
     fig3, axes = plt.subplots(nrows=4, ncols=1, figsize=(20, 15))
+    plt.subplots_adjust(left=0.125, bottom=0.1, right=0.9, top=0.9, wspace=0.2, hspace=0.45)
 
     transactions['date'] = pd.to_datetime(transactions['date'], format="%Y-%m-%d")
     dp_tran = DeterministicProcess(index=transactions['date'], constant=True, order=1, drop=True)
@@ -269,6 +273,7 @@ def run_forecast(transactions, train):
     train_w.insert(1, 'time', column_time_w)
 
     fig4, axes = plt.subplots(nrows=2, ncols=1, figsize=(20, 15))
+    plt.subplots_adjust(left=0.125, bottom=0.1, right=0.9, top=0.9, wspace=0.2, hspace=0.20)
 
     fourier = CalendarFourier(freq="A", order=10)  # 10 sin/cos pairs for "A"nnual seasonality
 
