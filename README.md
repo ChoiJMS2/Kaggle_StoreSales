@@ -1,6 +1,13 @@
 # Kaggle_Competition
 ## Store Sales - Time Series Forecasting
 
+[Kaggle page](https://www.kaggle.com/c/store-sales-time-series-forecasting) <br/><br/>
+[Streamlit page]() <br/><br/>
+[발표 영상]() <br/><br/>
+[데모 시연]() <br/><br/>
+[포트 폴리오]() <br/><br/>
+![screensh](img/홈페이지.png)
+
 ### 1.프로젝트의 시작 (2023.04.20 ~ 2023.05.17)
 - Kaggle Competition : Store Sales - Time Series Forecasting ( Use machine learning to predict grocery sales )
 - 링크 : https://www.kaggle.com/competitions/store-sales-time-series-forecasting/overview

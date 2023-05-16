@@ -11,7 +11,7 @@ import numpy as np
 import seaborn as sns
 import scipy.stats as stats
 from pingouin import ttest
-
+from arima import run_arima
 
 def adfullerTest(oil):
     st.markdown("### Augmented Dickey-Fuller Test(ADF) \n"
@@ -205,10 +205,12 @@ def twoMeans(train, transactions):
 def run_stat():
     train, stores, oil, transactions, holidays_events = load_data()
 
-    submenu = st.sidebar.selectbox("Submenu", ['Time Series', 'Two Means'])
+    submenu = st.sidebar.selectbox("Submenu", ['Time Series', 'ARIMA', 'Two Means'])
     if submenu == 'Time Series':
         st.markdown("## Time Series Analysis")
         adfullerTest(oil)
+    elif submenu == 'ARIMA':
+        run_arima()
     elif submenu == 'Two Means':
         st.markdown("## Two Means")
         twoMeans(train, transactions)
