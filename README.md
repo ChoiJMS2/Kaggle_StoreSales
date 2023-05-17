@@ -4,7 +4,7 @@
 [Streamlit 링크](https://choijms2-kaggle-storesales-app-a383bo.streamlit.app/) <br/><br/>
 [발표 영상]() <br/><br/>
 [데모 시연]() <br/><br/>
-[포트 폴리오]() <br/><br/>
+[포트 폴리오](https://github.com/ChoiJMS2/Kaggle_StoreSales/blob/main/storeSales.pdf) <br/><br/>
 ![screensh](https://github.com/ChoiJMS2/Kaggle_StoreSales/blob/main/img/main_page.PNG)
 
 ## 1.프로젝트의 시작 (2023.04.20 ~ 2023.05.17)
@@ -85,8 +85,3 @@ pip install -r requirements.txt
 ```bash
 streamlit run app.py
 ```
-
-# Store Sales - Time Series Forecasting
-
-## 주요 기능 업데이트 내용
--
